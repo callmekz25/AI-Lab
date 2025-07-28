@@ -1,4 +1,4 @@
-from readfile import readFileHeuristic, readFileMtk
+
 
 def HillClimbing(sodinh, h, adj, start, stop):
   OPEN = [start]
