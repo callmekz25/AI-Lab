@@ -47,7 +47,5 @@ def DFS(sodinh, adj, start, stop):
     
     
     
-if __name__ == "__main__":
-    sodinh, adj = readFile("DFS.mtk")
-    DFS(sodinh, adj, 0, 6)
+
     

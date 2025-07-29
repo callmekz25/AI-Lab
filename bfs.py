@@ -1,13 +1,4 @@
-def readFile(fileName):
-    with open(fileName) as f:
-        sodinh = int(f.readline())
-        adj = []
-        for i in range(sodinh):
-            line = list(map(int, f.readline().strip().split()))
-            adj.append(line)
-        # print(adj)
-    return sodinh, adj
-    
+
 def BFS(sodinh, adj, start, stop):
     
     OPEN = [start]
@@ -53,7 +44,5 @@ def BFS(sodinh, adj, start, stop):
     
     
     
-if __name__ == "__main__":
-    sodinh, adj = readFile("BFS.mtk")
-    BFS(sodinh, adj, 0, 7)
+
     
