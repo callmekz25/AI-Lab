@@ -9,10 +9,13 @@ from at import AT
 from a_star import AStar
 from cms import CMS
 from branch_and_bound import BranchAndBound
+from tomau import tomau
 if __name__ == "__main__":
-    # sodinh, adj = readFileMtk("file/branch_bound.mtk")
+    sodinh, adj = readFileMtk("file/branch_bound.mtk")
     # sodinh, adj = readFileMtk("file/BFS.mtk")
-    sodinh, adj = readFileMtk("file/DFS.mtk")
+    # sodinh, adj = readFileMtk("file/DFS.mtk")
+    sodinh, adj = readFileMtk('file/tomau.mtk')
+    tomau(sodinh, adj)
     # h = readFileHeuristic("file/branch_bound.heuristic")
     # AStar(sodinh, h, adj, 0, 10)
     # BranchAndBound(sodinh, h, adj, 0, 7)
